@@ -181,6 +181,17 @@ export const LAYOUT_G60 = `["x","x","x","x","x","x","x","x","x","x","x","x","x",
 ["x","x","x","x","x","x","x","x","x","x","x","x","x","x","x"],
 [{w:1.25},"x",{w:1.25},"x",{w:1.25},"x",{w:6.25},"x","x","x","x","x","x"]`;
 
+export const LAYOUT_DAISY = `[{c:"#a598c5",t:"#efefea",p:"NDSA",a:7},"ESC",{c:"#efefea",t:"#a598c5",f:9},"Q","W","E","R","T","Y","U","I","O","P",{c:"#a598c5",t:"#efefea",f:3},"BS"],
+[{w:1.25},"TAB",{c:"#efefea",t:"#a598c5",f:9},"A","S","D",{n:true},"F","G","H",{n:true},"J","K","L",{c:"#a598c5",t:"#efefea",f:3,w:1.75},"ENTER"],
+[{w:1.75},"SHIFT",{c:"#efefea",t:"#a598c5",f:9},"Z","X","C","V","B","N","M",{a:5,f:8},"<\n,",">\n.",{c:"#a598c5",t:"#efefea",a:7,f:3,w:1.25},"SHIFT"],
+[{w:1.25},"CTRL",{fa:[7]},"<i class='fa fa-windows'></i>",{f:3,w:1.25},"ALT",{c:"#efefea",t:"#a598c5",p:"NDSA SPACE",f:4,w:2.25},"SPC",{w:2.75},"SPC",{c:"#a598c5",t:"#efefea",p:"NDSA",f:3,w:1.25},"ALT",{f:9},"<i class='fa fa-windows'></i>",{f:3,w:1.25},"CTRL"]`;
+
+export const LAYOUT_SPACE65 = `[{c:"#0073a2",t:"#CCCCB7",p:"SA",a:7},"Esc",{c:"#6e6d6b",a:5,f:7},"!\n1","@\n2","#\n3","$\n4","%\n5","^\n6","&\n7","*\n8","(\n9",")\n0","&mdash;\n&ndash;","+\n=",{f:6},"|\n\\",{c:"#0073a2",a:6,f:3},"Delete",{a:7},"Page Up"],
+[{w:1.5},"Tab",{c:"#6e6d6b",a:5,f:7},"&#8743;\nQ","&#8744;\nW","&#8745;\nE","&#8746;\nR","&#8834;\nT","&#8835;\nY","&#8704;\nU","&#8734;\nI","&#8707;\nO","&#8706;\nP","[\n(","]\n)",{c:"#0073a2",a:6,f:2,w:1.5},"BackSpace",{a:7,f:3},"Page Down"],
+[{w:1.75},"Caps Lock",{c:"#6e6d6b",a:5,f:7},"&#8869;\nA","&#8868;\nS","&#8866;\nD",{n:true},"&#8867;\nF","&#8593;\nG","&#8595;\nH",{n:true},"&#8592;\nJ","&#8594;\nK","&#8596;\nL",":\n;","\"\n'",{c:"#0073a2",a:7,f:3,w:2.25},"Return","Home"],
+[{w:1.25},"Shift","Fn",{c:"#6e6d6b",a:5,f:7},"&#8970;\nZ","&#8968;\nX","&#8800;\nC","&#8771;\nV","&#8801;\nB","&#8804;\nN","&#8805;\nM","<\n,",">\n.","?\n/",{c:"#0073a2",a:7,f:3,w:1.75},"Shift","Up","End"],
+[{w:1.25},"Ctrl",{w:1.25},"Win",{w:1.25},"Alt",{p:"SA SPACE",w:2.25},"",{p:"SA",w:1.25},"",{p:"SA SPACE",w:2.75},"",{p:"SA",w:1.25},"Alt",{w:1.25},"Ctrl",{x:0.5},"Left","Down","Right"]`;
+
 export function parseKLERaw(kle: string): ParsedKLE {
   const kleArr = kle.split(',\n');
   const parsedKLE: OuterReduceState = kleArr.reduce(
