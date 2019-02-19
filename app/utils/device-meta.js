@@ -241,13 +241,13 @@ export const DEVICE_META_MAP: DeviceMetaMap = {
     name: 'BIOI G60',
     layout: LAYOUT_G60,
     matrixLayout: MATRIX_G60,
-    lights: false,
+    lights: false
   },
   [0x12092328]: {
     name: 'Daisy',
     layout: LAYOUT_DAISY,
     matrixLayout: MATRIX_DAISY,
-    lights: true
+    lights: false
   },
   [0xfeed0000]: {
     name: 'Space65',
