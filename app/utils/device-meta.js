@@ -253,7 +253,7 @@ export const DEVICE_META_MAP: DeviceMetaMap = {
     name: 'Space65',
     layout: LAYOUT_SPACE65,
     matrixLayout: MATRIX_SPACE65,
-    lights: true
+    lights: false
   }
 };
 
